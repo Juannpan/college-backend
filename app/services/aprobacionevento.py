@@ -19,8 +19,8 @@ async def crear_aprobacionevento_service(session: AsyncSession, nueva_aprobacion
         ) from e
 
 
-async def listar_aprobacioneseventos_service(session: AsyncSession) -> Sequence[AprobacionEventoModel]:
-    return await aprobacionevento_crud.listar_aprobacioneseventos(session)
+async def listar_aprobacionevento_service(session: AsyncSession) -> Sequence[AprobacionEventoModel]:
+    return await aprobacionevento_crud.listar_aprobacioneventos(session)
 
 
 async def buscar_aprobacionevento_por_id_service(session: AsyncSession, aprobacion_id: int) -> AprobacionEventoModel:
